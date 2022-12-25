@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+}
+.header{
+  height: 100px;
+  background-color: #161616;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h2{
+  font-family: 'Unbounded', cursive;
+  font-size: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header a{
+  text-decoration: none;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.div-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.item-list{
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
+.btn-contador{
+  background-color: #403f3f;
+  color: #fff;
+  font-size: 16px;
+  height: 40px;
+  width: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-min, .btn-max{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background-color: #161616;
+  color: #fff;
+}
+
+.product{
+  background-color: #9d9c9c;
+  margin: 10px;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.product img{
+  width: 320px;
+  height: 320px;
+  margin: 10px;
+}
+
+.product h2{
+  margin: 5px;
+  font-weight: 300;
+}
+
+.product p{
+  margin-bottom: 5px;
+}
+
+.product-item{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  background-color:#403f3f;
+  color: #fff;
+  height: 40px;
+  width: 90px;
+  margin: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.details a{
+  text-decoration: none;
+  color: #403f3f;
 }
